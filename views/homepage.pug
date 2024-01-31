@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    table
+      thead
+        tr
+          th Name
+          th Email
+      tbody
+        each contact in contacts.results
+          tr
+            td= contact.properties.firstname
+            td= contact.properties.email
